@@ -18,6 +18,7 @@ RUN docker-php-ext-install exif
 COPY ./docker/php-fpm/php-fpm.conf /usr/local/etc/php-fpm.d/www.conf
 
 COPY ./src /app
+COPY ./docker/php-fpm/.env /app
 
 WORKDIR /app
 
