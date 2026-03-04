@@ -19,6 +19,7 @@ services:
     volumes:
       - ./src:/app/
       - ./src/.env.server:/app/.env
+      - ./src/tmp:/tmp
 
   database:
     image: mariadb:10.5.8
