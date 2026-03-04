@@ -27,3 +27,7 @@ RUN php -r "unlink('composer-setup.php');"
 RUN mv composer.phar /usr/local/bin/composer
 
 RUN composer install
+
+RUN chown -R www-data:www-data /app/vendor
+RUN chown -R www-data:www-data /app/storage
+RUN chown -R www-data:www-data /app/bootstrap/cache
