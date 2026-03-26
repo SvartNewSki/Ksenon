@@ -1,0 +1,13 @@
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+.footerBlock {
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.735);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+}
+
+body,
+html {
+    background-image: url(https://sotni.ru/wp-content/uploads/2023/08/zvezdnoe-nebo-fon-6.webp);
+    color: white;
+    height: 100%;
+}
+.main {
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.circle {
+    /* margin-top: 60px; */
+    background-color: transparent;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+    border: 3px dashed;
+    border-color: white;
+    position: absolute;
+}
+.circle2 {
+    /* margin-top: 60px; */
+    background-color: transparent;
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+    border: 3px dashed;
+    border-color: white;
+    position: absolute;
+}
+.circle3 {
+    /* margin-top: 60px; */
+    background-color: transparent;
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    border: 3px dashed;
+    border-color: white;
+    position: absolute;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 0 auto; /* Растягивается, занимая все свободное место */
+}
+
+.footer {
+    flex-shrink: 0; /* Запрещаем сжиматься */
+}
+@keyframes orbital {
+    from {
+        /* Смещаем по радиусу и вращаем */
+        transform: rotate(0deg) translateX(240px) translateY(100px) rotate(0deg);
+    }
+    to {
+        /* Делаем полный оборот */
+        transform: rotate(360deg) translateX(240px) translateY(100px)
+            rotate(-360deg);
+    }
+}
+@keyframes orbital2 {
+    from {
+        /* Смещаем по радиусу и вращаем */
+        transform: rotate(0deg) translateX(250px) translateY(250px) rotate(0deg);
+    }
+    to {
+        /* Делаем полный оборот */
+        transform: rotate(360deg) translateX(250px) translateY(250px)
+            rotate(-360deg);
+    }
+}
+.project1 {
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    /* margin-top: -15px; */
+    animation: orbital 15s linear infinite;
+    img {
+        max-width: 130px;
+    }
+}
+.project2 {
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    /* background-color: blue; */
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -15px;
+    animation: orbital2 12s linear infinite;
+    img {
+        max-width: 150px;
+    }
+}
+.project1:hover {
+    animation-play-state: paused;
+}
+.project2:hover {
+    animation-play-state: paused;
+}

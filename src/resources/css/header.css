@@ -1,0 +1,23 @@
+ul {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+}
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+.headerBlock {
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.735);
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

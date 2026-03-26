@@ -14,4 +14,7 @@ class ContentController extends Controller
         $movie = Movie::all();
         return view('film', compact('movie'));
     }
+    public function portfolio(){
+        return view('portfolio');
+    }
 }
