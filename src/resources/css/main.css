@@ -4,7 +4,9 @@
     border: none;
     color: white;
 }
-
+button {
+    color: black;
+}
 body,
 html {
     background-image: url(https://sotni.ru/wp-content/uploads/2023/08/zvezdnoe-nebo-fon-6.webp);
@@ -115,4 +117,31 @@ html {
 }
 .project2:hover {
     animation-play-state: paused;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+}
+.modal_box {
+    max-width: 500px;
+    padding: 45px;
+    z-index: 1;
+    background-color: black;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
 }
