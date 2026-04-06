@@ -10,7 +10,7 @@ class UserController extends Controller{
         return view('auth');
     }
 
-    public function register(){
-        return view ('register');
+    public function reg(){
+        return view ('reg');
     }
 }
